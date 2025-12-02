@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@11ty/eleventy": "^0.10.0"
+    "@11ty/eleventy": "^3.1.2"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "npm run serve",
     "serve": "ELEVENTY_ENV=development npx eleventy --serve",
