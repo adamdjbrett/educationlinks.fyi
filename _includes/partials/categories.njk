@@ -1,0 +1,19 @@
+<h2>Categories</h2>
+{% for c in categories.tags %}
+<article class="reel">
+    <h3 class="reel__heading">
+        {{ c.title }}
+        <a href="/category/{{ c.slug }}">View all</a>
+    </h3>
+    <ul class="reel__list">
+        {% for z in collections[c.slug] %}
+            <li class="reel__item">
+                <article class="card">
+                    <h4 class="card__heading"><a href="{{ z.data.link }}" rel="external">{{ z.data.title }}</a></h4>
+                   {{ z.data.summary | default('') | md | safe }}
+                </article>
+            </li>
+        {% endfor %}
+    </ul>
+</article>
+{% endfor %}

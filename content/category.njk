@@ -1,0 +1,32 @@
+---
+layout: base.njk
+pagination:
+  data: collections
+  size: 1 
+  alias: tag
+  filter:
+    - all
+    - nav
+    - tagList
+  addAllPagesToCollections: true
+permalink: /category/{{ tag }}/
+---
+{% set items = collections[tag] %}
+<h2>Items filed under “{{tag}}”</h2>
+<p>You are viewing items from the {{tag}}” category. <a href="/">See all categories here</a>.</p>
+<div class="[ wrapper ] [ flow ]">
+  <div class="[ wrapper ] [ flow ]">
+     <ul class="auto-grid">
+      {% for c in items %}
+        <li>
+          <article class="card">
+            <h3 class="card__heading"><a href="{{ c.data.link }}" rel="external">{{ c.data.title }}</a></h3>
+            {{ c.data.summary | default('') | md | safe }}
+          </article>
+        </li>
+      {% endfor %}
+    </ul>
+    <hr />
+    <a href="/">Back to all items</a>
+  </div>
+</div>

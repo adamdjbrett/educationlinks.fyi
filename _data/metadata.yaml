@@ -1,0 +1,25 @@
+title: "Education Links"
+description: | 
+   The Coronavirus Pandemic has resulted in school closures in many countries around the globe, so here is a collection of links to help you and your kids to access <i>loads</i> of resources from around the web.
+info_text: | 
+  This project is <a href="https://github.com/hankchizljaw/educationlinks.fyi">completely open source</a>, so please, contribute where you can.
+image: "https://images.unsplash.com/photo-1761481755390-83999d790b95?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0Nnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=60&w=400"
+language: "en"
+locale: en_US
+favicon: "https://getbootstrap.com/docs/5.3/assets/img/favicons/apple-touch-icon.png"
+url: "http://localhost:8080"
+
+metasocial:
+  - facebook: https://www.facebook.com/user
+  - twitteruser: "@user"
+  - twitter: https://x.com/user
+
+footer: |
+   <p>
+          A project by <a href="//hankchizljaw.com">Andy Bell</a>, with special thanks to
+          <a href="https://www.ambermiller.co.uk/">Amber Miller</a> for providing a huge
+          collection of links to get it running. This site runs on <a href="//11ty.dev">Eleventy</a> and is
+          hosted by <a href="//netlify.com">Netlify</a>.
+        </p>
+        <p>This content is and will always be <a href="//github.com/hankchizljaw/educationlinks.fyi">free and open source</a> under the MIT licence.</p>
+
