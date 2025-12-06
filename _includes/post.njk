@@ -1,0 +1,8 @@
+---
+layout: base.njk
+---
+<h2>{{title}}</h2>
+<h3>{{summary}}</h3>
+<p>Link <a href="{{link}}">{{link}}</a></p>
+<p>View More:  {%- for tag in tags | filterTagList %}{%- set tagUrl %}/category/{{ tag | slugify }}/{% endset %}<a href="{{tagUrl}}" style="margin:7px;">{{tag}}</a> {%- endfor %}</p>
+{{ content | safe }}
