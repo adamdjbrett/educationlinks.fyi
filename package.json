@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^3.1.6"
   },
   "scripts": {
     "start": "npm run serve",
@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/hankchizljaw/directory-site/issues"
   },
-  "homepage": "https://github.com/hankchizljaw/directory-site#readme"
+  "homepage": "https://github.com/hankchizljaw/directory-site#readme",
+  "engines": {
+    "node": ">=24",
+    "npm": ">=11.14.0"
+  },
+  "packageManager": "npm@11.14.0"
 }
